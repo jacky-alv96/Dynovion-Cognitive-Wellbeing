@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.top-bar p {
+    margin: 0;
+}
+
+.top-bar .close-icon {
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header {
+    background-color: #1A5239;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 50px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+.header .logo p {
+    color: #fff;
+    font-size: 12px;
+    margin: 0;
+}
+
+.nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav ul li {
+    margin-right: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.nav ul li a:hover,
+.nav ul li a.active {
+    border-bottom: 2px solid #fff; /* Underline effect */
+}
+
+.get-started-btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url('https://i.imgur.com/K1x53bL.jpeg'); /* Replace with your actual image */
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Adjust as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4em;
+    margin: 0;
+    position: relative;
+    display: inline-block; /* To make the underline work */
+}
+
+.hero h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; /* Adjust position of underline */
+    height: 2px;
+    background-color: #fff;
+}
+
+.footer {
+    background-color: #F0F0F0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.footer .logo img {
+    height: 100px; /* Adjust as needed */
+    margin-bottom: 10px;
+}
+
+.footer h3 {
+    color: #555;
+    font-size: 1.5em;
+} 
