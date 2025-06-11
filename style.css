@@ -1,6 +1,19 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+}
+h2 {
+    font-weight: 300;
+    font-size: 22px;
+    display: flex;
+    justify-content: center;
 }
 
 .top-bar {
@@ -87,6 +100,7 @@ body {
     align-items: center;
     color: #fff;
     text-align: center;
+    margin-bottom: 60px;
 }
 
 .hero::before {
@@ -108,7 +122,6 @@ body {
     height: 100%;
     object-fit: cover;
     z-index: -1;
-    
 }
 
 .hero h1 {
@@ -119,6 +132,35 @@ body {
     margin: 0;
     
 }
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 80px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service {
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ccc; 
+}
+
+.service img {
+    height: 150px;
+}
+
+.service p {
+    text-align: justify;
+}
+
+.btn {
+    display: inline-block;
+    color: #009900;
+    text-decoration: underline;
+  }
 
 .footer {
     background-color: #F0F0F0;
@@ -150,4 +192,60 @@ body {
     height: auto;
     margin-top: 5px; /* Added space between text and icon */
     fill: white;
+    display: block;
+    transform: scaleY(-1);
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 768px) {
+    .top-bar {
+        padding: 10px 20px;
+        justify-content: center; /* Centered for mobile */
+    }
+
+    .header {
+        padding: 20px;
+    }
+
+    .nav {
+        display: none; /* Hide desktop navigation */
+    }
+    
+    .get-started-btn {
+        display: none; /* Hide desktop button on mobile */
+    }
+
+    .hamburger-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 30px;
+        height: 25px;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+
+    .hero {
+        padding: 0 20px; /* Add padding for mobile */
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Smaller font size for mobile */
+    }
+
+    .hero-icon {
+        width: 250px; /* Adjust icon width for mobile */
+        margin-top: 10px; /* Adjust margin for mobile */
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 }
