@@ -110,7 +110,7 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7); /* Black overlay with 50% opacity */
+    background-color: rgba(0, 0, 0, 0.8); /* Black overlay with 50% opacity */
     z-index: 0;
 }
 
@@ -156,11 +156,97 @@ h2 {
     text-align: justify;
 }
 
+.service-description  {
+    width: 80%;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+    padding: 20px;
+}
+
+.service-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;      /* Centers the entire section horizontally */
+    align-items: flex-start;      /* Aligns text and image to top */
+    gap: 40px;                    /* Space between text and image */
+    width: 80%;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 40px 20px;
+    border-radius: 8px;
+  }
+  
+  /* Text content styling */
+  .service-list {
+    flex: 1 1 150px;
+  }
+  
+  .service-list h2, .service-list h1 {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .service-list ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+  }
+  
+  .service-list li {
+    font-size: 17px;
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 20px;
+  }
+  
+  .service-list li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+  }
+  
+  /* Image styling */
+  .service-img {
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  .service-img img {
+    width: 80%;
+    
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+
+  
+/* .service-details {
+    width: 80%;
+    display: flex;
+    justify-items: center;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 2;
+    gap: 20px;
+}
+
+.service-img img {
+    width: 60%;
+    height: auto;
+    border-radius: 8px; /* optional: for rounded corners */
+
+} */
 .btn {
     display: inline-block;
     color: #009900;
     text-decoration: underline;
-  }
+}
 
 .footer {
     background-color: #F0F0F0;
