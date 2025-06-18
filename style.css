@@ -1,6 +1,7 @@
 body {
     margin: 0;
     font-family: Poppins, sans-serif;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -249,53 +250,55 @@ h2 {
 }
 
 .quote {
-    position: relative;
-    padding: 100px 10px;
-   
+    padding: 100px 0;
     background-color: #d3d3d3;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border: solid blue 2px;
 }
 
 .quote-section {
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center; /* Center content horizontally */
+    max-width: 800px;
     margin: 0 auto;
-    align-items: center; /* Vertically center the flex items */
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quote-image {
-    width: 60%; /* Further increased width for an even bigger image */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    z-index: 1;
+    width: 100%;
+    position: relative;
+    transform: translateX(-120px);
 }
 
-
 .quote-image img {
+    width: 100%;
     height: auto;
     border-radius: 10px;
     object-fit: cover;
+    display: block;
 }
 
 .quote-content {
-    position: relative;
-    width: 30%; /* Further adjusted width to accommodate larger image */
-    z-index: 2;
-    padding: 40px 50px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 60%;
+    height: 60%;
     background-color: white;
+    padding: 30px 40px;
     font-style: italic;
-    font-size: 26px;
+    font-size: 24px;
     font-weight: 300;
     line-height: 1.6;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-left: -100px; /* Further adjusted for increased overlap with even bigger image */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 2;
 }
 
-.quote-content p {
-    margin: 0;
-}
 
 @media screen and (min-width: 1025px) {
     
@@ -379,6 +382,22 @@ h2 {
 .quote-image {
     order: -1;
 }
+}
+
+@media (max-width: 900px) {
+    .quote-section {
+        max-width: 95vw;
+    }
+    .quote-image {
+        max-width: 100vw;
+    }
+    .quote-content {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: -30px;
+        font-size: 1rem;
+    }
 }
 
 .footer {
