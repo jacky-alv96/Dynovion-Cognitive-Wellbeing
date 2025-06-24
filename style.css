@@ -209,18 +209,16 @@ h2 {
   
   /* Image styling */
 .service-img {
-   
     display: flex;
     justify-content: center;
     align-items: flex-start;
 }
   
 .service-img img {
-    width: 90%;
-    margin-top: 0;
+    width: 500px;
     height: auto;
+    object-fit: cover;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
   
 .btn {
@@ -329,6 +327,9 @@ h2 {
     width: auto;
     max-width: 100%;
 }
+.pre-contact-section {
+    min-height: 700px;
+}
 }
 
 @media screen and (max-width: 768px) {
@@ -418,6 +419,17 @@ h2 {
     right: 0;
     margin-top: -30px;
 }
+.service-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.service-img img {
+    width: 325px;
+    height: 200px;
+    margin: 0 auto !important;
+    display: block;
+}
 }
 
 
@@ -444,7 +456,6 @@ h2 {
     color: #FFFFFF;
     padding: 0px 30px 30px 30px;
     text-align: center;
-    border: 2px solid blue;
 }
 
 .footer .logo img {
@@ -523,6 +534,9 @@ h2 {
     justify-content: center;
     width: 100%;
   }
+  .pre-contact-section {
+    min-height: 600px;
+  }
 }
 @media (max-width: 600px) {
   .footer-links {
@@ -565,4 +579,81 @@ h2 {
 .footer-privacy p {
   margin-bottom: 24px;
   font-weight: 300;
+}
+
+.pre-contact-section {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+}
+.pre-contact-img {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
+}
+.pre-contact-overlay {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 2;
+}
+.pre-contact-content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px 60px 20px;
+}
+.pre-contact-content h2 {
+  color: #fff;
+  font-size: 3.2em;
+  font-family: 'Georgia', serif;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.1;
+}
+.pre-contact-btn {
+  background: #1576b8;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 20px 60px;
+  font-size: 1.3em;
+  font-family: inherit;
+  cursor: pointer;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-weight: 400;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition: background 0.2s, box-shadow 0.2s;
+  margin-top: 10px;
+}
+.pre-contact-btn:hover {
+  background: #125a8a;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+@media (max-width: 700px) {
+  .pre-contact-content h2 {
+    font-size: 2em;
+  }
+  .pre-contact-btn {
+    padding: 16px 24px;
+    font-size: 1em;
+  }
+  .pre-contact-content {
+    padding: 40px 10px 40px 10px;
+  }
 }
