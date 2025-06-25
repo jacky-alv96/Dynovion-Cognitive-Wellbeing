@@ -1,0 +1,118 @@
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 60px auto 60px auto;
+    padding: 0 24px;
+    gap: 40px;
+    min-height: 600px;
+  }
+  .contact-left {
+    flex: 1 1 340px;
+    min-width: 300px;
+    max-width: 480px;
+    margin-right: 20px;
+    line-height: 2;
+  }
+  .contact-left h1 {
+    font-size: 3em;
+    color: #002D00;
+    margin-bottom: 24px;
+    justify-content: flex-start;
+  }
+  .contact-left p {
+    font-size: 1.08em;
+    margin-bottom: 18px;
+  }
+  .contact-left a {
+    color: #009900;
+    text-decoration: underline;
+    word-break: break-all;
+  }
+  .contact-info {
+    margin-top: 24px;
+  }
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 1.08em;
+  }
+  .contact-info b {
+    font-weight: 600;
+  }
+  .contact-info a {
+    color: #009900;
+    text-decoration: underline;
+  }
+  .contact-form-section {
+    flex: 2 1 400px;
+    min-width: 320px;
+    max-width: 600px;
+    background: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  .form-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+  .form-row > div {
+    flex: 1 1 0;
+  }
+  .form-row input {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .form-row label {
+    margin-bottom: 12px;
+    display: block;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    font-size: 1em;
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    background: #fafafa;
+    font-family: inherit;
+    resize: none;
+  }
+  textarea {
+    min-height: 100px;
+    max-height: 300px;
+  }
+  .send-btn {
+    background: #002D00;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 14px 38px;
+    font-size: 1.1em;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-weight: 500;
+    margin-top: 10px;
+    align-self: flex-start;
+    transition: background 0.2s;
+  }
+  .send-btn:hover {
+    background: #009900;
+  }
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+}
+    .contact-form input[type='email'],
+    .contact-form input[type='tel'],
+    .contact-form textarea {
+        max-width: 350px;
+        width: 100%;
+    }
