@@ -1036,6 +1036,55 @@ select, option {
   }
 }
 
+.hero-home::before {
+  height: 850px;
+  max-height: 850px;
+}
+
+.hero-home {
+  justify-content: flex-start !important;
+  align-items: center !important;
+  text-align: left !important;
+}
+.hero-home .hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    width: auto;
+    height: auto;
+    padding-left: 7vw;
+    padding-right: 0;
+    padding-top: 120px;
+}
+.hero-home p {
+    font-size: 38px;
+    margin-bottom: 4px;
+    margin-top: 0;
+    text-align: left;
+}
+
+.hero-home .hero-chevron {
+  margin-top: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero-home .hero-chevron svg {
+  display: block;
+  margin-right: 90px;
+  transform: scaleX(0.7);
+}
+
+.hero-italic {
+  font-style: italic;
+}
+
+.about-section-home {
+  margin-top: 250px;
+}
 
 
 
