@@ -56,7 +56,8 @@
         </section>
 
         <section class="get-started-section" style="max-width: 700px; margin: 40px auto; background: #fff; padding: 32px 24px;">
-            <h2 style="text-align:center; margin-bottom: 24px;">Schedule an Appointment</h2>
+            <h2 style="text-align:center; margin-bottom: 24px; font-size: 32px; color: #002D00; font-weight: 500;">Schedule an Appointment</h2>
+            <p style="text-align:center; margin-bottom: 40px;">Please complete the information below to book your desired consultation. We'll be in contact with you soon.</p>
             <form class="get-started-form">
               
               <!-- First + Last Name -->
@@ -86,43 +87,34 @@
               <!-- Add a submit button or more fields as needed -->
 
                 <label>What would you like to be treated for?*</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="treatment[]" value="Anxiety Disorder"> Anxiety Disorder</label>
-                    <label><input type="checkbox" name="treatment[]" value="Eating Disorder"> Eating Disorder</label>
-                    <label><input type="checkbox" name="treatment[]" value="Mood Disorders"> Mood Disorders</label>
-                    <label><input type="checkbox" name="treatment[]" value="Depression"> Depression</label>
-                    <label><input type="checkbox" name="treatment[]" value="Substance Abuse"> Substance Abuse</label>
-                    <label><input type="checkbox" name="treatment[]" value="Schizophrenia"> Schizophrenia</label>
-                    <label><input type="checkbox" name="treatment[]" value="PTSD"> PTSD</label>
-                    <label><input type="checkbox" name="treatment[]" value="ADHD"> ADHD</label>
-                    <label><input type="checkbox" name="treatment[]" value="Other"> Other</label>
-                    <label><input type="checkbox" name="treatment[]" value="I don't know"> I don't know</label>
+                <div class="checkbox-list">
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Anxiety Disorder"><span>Anxiety Disorder</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Loss or Grief"><span> Loss or Grief</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Mood Disorders"><span>Mood Disorders</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Depression"><span>Depression</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Substance Abuse"><span>Substance Abuse</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Family Issues"><span>Family Issues</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="PTSD"><span>PTSD</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Life Adjustments"><span>Life Adjustments</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Self-Harm"><span>Self-Harm</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="treatment[]" value="Other"><span>Other</span></label>
                 </div>
-
+                <br>
+                <br>
                 <label>What services are you interested in?*</label>
-                <div class="checkbox-group">
-                    <label><input type="checkbox" name="services[]" value="Psychotherapy & Counseling"> Psychotherapy & Counseling</label>
-                    <label><input type="checkbox" name="services[]" value="Basic Functional Medicine"> Basic Functional Medicine</label>
-                    <label><input type="checkbox" name="services[]" value="Ketamine Assisted Psychotherapy"> Ketamine Assisted Psychotherapy</label>
-                    <label><input type="checkbox" name="services[]" value="Trauma Informed Care"> Trauma Informed Care</label>
-                    <label><input type="checkbox" name="services[]" value="I don't know"> I don't know</label>
+                <div class="checkbox-list">
+                    <label class="checkbox-flex"><input type="checkbox" name="services[]" value="Individual Therapy"><span>Individual Therapy</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="services[]" value="Couple Counseling"><span>Couple Counseling</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="services[]" value="Family Therapy"><span>Family Therapy</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="services[]" value="Adolescent Therapy"><span>Adolescent Therapy</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="services[]" value="Addiction Recovery"><span>Addiction Recovery</span></label>
+                    <label class="checkbox-flex"><input type="checkbox" name="services[]" value="Support for Medical Treatment"><span>Support for Medical Treatment</span></label>
                 </div>
-
-                <label for="provider">Provider of choice (if any)</label>
-                <select id="provider" name="provider">
-                    <option value="">Any</option>
-                    <option value="Alex Wills, MD">Alex Wills, MD</option>
-                    <option value="Tauna Young, FNP">Tauna Young, FNP</option>
-                    <option value="Skip Goddard, LCPC">Skip Goddard, LCPC</option>
-                    <option value="Tyson Flowers, FNP">Tyson Flowers, FNP</option>
-                    <option value="Brad Greaves, PA-C">Brad Greaves, PA-C</option>
-                    <option value="Julie Akins, FNP">Julie Akins, FNP</option>
-                    <option value="Craig Hope, FNP">Craig Hope, FNP</option>
-                    <option value="Soonest available">Soonest available</option>
-                </select>
-
+                <br>
                 <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4"></textarea>
+                <div style="margin-bottom: 32px;">
+                  <textarea id="message" name="message" rows="4" style="width:100%;"></textarea>
+                </div>
 
                 <button type="submit" class="send-btn">SEND</button>
             </form>

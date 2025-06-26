@@ -833,4 +833,10 @@ label {
   }
 }
 
+select, option {
+  font-size: 1em;
+}
+
+
+
 
