@@ -390,6 +390,25 @@ h2 {
   .footer-links a:last-child {
     margin-right: 0;
   }
+
+  .hero-icon {
+    width: 250px; /* Adjusted size to be smaller */
+    height: auto;
+    margin-top: 5px; /* Added space between text and icon */
+    margin-left: 100px;
+    fill: white;
+    display: block;
+    transform: scaleY(-1);
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative; /* To contain the h1 and SVG */
+    z-index: 1; /* Ensure content is above image */
+}
 }  
 
 
@@ -434,11 +453,11 @@ h2 {
 }
 
 .hero h1 {
-    font-size: 2.5em; /* Smaller font size for mobile */
+    font-size: 2.8em; /* Smaller font size for mobile */
 }
 
 .hero-icon {
-    width: 250px; /* Adjust icon width for mobile */
+    width: 100px; /* Adjust icon width for mobile */
     margin-top: 10px; /* Adjust margin for mobile */
 }
 
@@ -491,9 +510,15 @@ h2 {
     margin: 0 auto !important;
     display: block;
 }
+.hero-icon {
+    width: 150px; /* Adjusted size to be smaller */
+    height: auto;
+    margin-top: 5px; /* Added space between text and icon */
+    margin-left: 90px;
+    fill: white;
+    display: block;
+    transform: scaleY(-1);
 }
-
-
 .hero-content {
     display: flex;
     flex-direction: column;
@@ -502,15 +527,10 @@ h2 {
     position: relative; /* To contain the h1 and SVG */
     z-index: 1; /* Ensure content is above image */
 }
-
-.hero-icon {
-    width: 380px; /* Adjusted size to be smaller */
-    height: auto;
-    margin-top: 5px; /* Added space between text and icon */
-    fill: white;
-    display: block;
-    transform: scaleY(-1);
 }
+
+
+
 
 .footer {
     background-color: #002D00;
@@ -812,4 +832,5 @@ label {
     margin-top: 0 !important;
   }
 }
+
 
