@@ -837,6 +837,60 @@ select, option {
   font-size: 1em;
 }
 
+.paperwork-section {
+  width: 100%;
+  background: #ededf0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+.paperwork-text {
+  flex: 1 1 340px;
+  min-width: 280px;
+  max-width: 520px;
+}
+.paperwork-text h2 {
+  font-size: 2.8em;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+.paperwork-text .paperwork-subhead {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.paperwork-text .paperwork-email {
+  margin-bottom: 18px;
+}
+.paperwork-download {
+  display: inline-block;
+  background: #002D00;
+  color: #fff;
+  border-radius: 8px;
+  padding: 20px 48px;
+  font-size: 1.2em;
+  font-weight: 500;
+  margin-bottom: 24px;
+  text-decoration: none;
+}
+.paperwork-img {
+  flex: 1 1 340px;
+  min-width: 280px;
+  max-width: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paperwork-img img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 16px;
+  object-fit: cover;
+}
+
 
 
 
