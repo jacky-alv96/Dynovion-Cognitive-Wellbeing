@@ -840,7 +840,6 @@ select, option {
 .paperwork-section {
   width: 100%;
   background: #ededf0;
-  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -862,9 +861,7 @@ select, option {
   font-weight: 600;
   margin-bottom: 10px;
 }
-.paperwork-text .paperwork-email {
-  margin-bottom: 18px;
-}
+
 .paperwork-download {
   display: inline-block;
   background: #002D00;
@@ -873,7 +870,7 @@ select, option {
   padding: 20px 48px;
   font-size: 1.2em;
   font-weight: 500;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
   text-decoration: none;
 }
 .paperwork-img {
@@ -889,6 +886,20 @@ select, option {
   max-width: 520px;
   border-radius: 16px;
   object-fit: cover;
+  padding-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .paperwork-section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .paperwork-download {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 
