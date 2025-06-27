@@ -327,9 +327,8 @@ h2 {
 .about-feature-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     margin-bottom: 60px;
-    gap: 40px;
+    gap: 50px;
     flex-wrap: wrap;
   }
   
@@ -427,12 +426,18 @@ h2 {
     display: none; /* Hide desktop navigation */
 }
 
+.mobile-nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .get-started-btn {
     background: #1576b8;
     color: #fff;
     border-radius: 8px;
     padding: 20px 48px;
-    font-size: 1.2em;
+    font-size: 0.8em;
     font-weight: 600;
     border: none;
     text-decoration: none;
@@ -450,9 +455,8 @@ h2 {
 .hamburger-menu {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     width: 30px;
-    height: 25px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -905,19 +909,6 @@ select, option {
   padding-bottom: 20px;
 }
 
-@media (max-width: 600px) {
-  .paperwork-section {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .paperwork-download {
-    margin-top: 20px;
-    margin-bottom: 40px;
-  }
-}
-
 @media (max-width: 768px) {
   .nav {
     display: none !important;
@@ -1100,6 +1091,13 @@ select, option {
 
 .about-section-home {
   margin-top: 250px;
+}
+
+@media (max-width: 600px) {
+  .btn,
+  .learn-more {
+    text-align: center;
+  }
 }
 
 
